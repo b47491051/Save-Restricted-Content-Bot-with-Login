@@ -16,9 +16,10 @@ from dotenv import load_dotenv
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 load_dotenv(override=True)
 
-API_ID = int(os.getenv("TG_API_ID", ""))
-API_HASH = os.getenv("TG_API_HASH", "")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+API_ID = int(os.getenv("TG_API_ID", "22223501"))
+API_HASH = os.getenv("TG_API_HASH", "e78c151d670ab33c5f7f731027c5ab26")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "7329591675:AAGaT6f8u-NcGNL4ytq0XTFNkYZL_SS8bd8
+")
 MONGODB_URL = os.getenv("MONGODB_URL", "bikash:Bikash.mongodb.net/?retryWrites=true&w=majority")
 BOT_USERNAME = None
 bot = TelegramClient('bot', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
